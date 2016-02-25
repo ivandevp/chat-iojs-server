@@ -1,0 +1,31 @@
+{
+  "name": "animate-server",
+  "version": "0.1.0",
+  "description": "Realtime chat with video and gif's",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "npm run build-js",
+    "build-js": "browserify client/app.js -o public/app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ivandevp/animate-server.git"
+  },
+  "author": "Ivan Medina <medinadiazivan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivandevp/animate-server/issues"
+  },
+  "homepage": "https://github.com/ivandevp/animate-server#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "course": "0.0.1",
+    "st": "^1.1.0",
+    "webrtc2images": "^1.4.4",
+    "xhr": "^2.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  }
+}
